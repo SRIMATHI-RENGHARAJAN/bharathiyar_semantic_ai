@@ -64,6 +64,25 @@ Open http://localhost:5173 in your browser.
 
 ## How It Works
 
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   User Query    │────▶│   FastAPI       │────▶│   LaBSE Model   │
+│  (English/Tamil)│     │   Backend       │     │   (Embeddings)  │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+                                │                        │
+                                ▼                        ▼
+                        ┌─────────────────┐     ┌─────────────────┐
+                        │ Cosine Similarity│◀───│ Song Embeddings │
+                        │    Ranking      │     │  (Pre-computed) │
+                        └─────────────────┘     └─────────────────┘
+                                │
+                                ▼
+                        ┌─────────────────┐
+                        │  Top 5 Results  │
+                        │  (React Cards)  │
+                        └─────────────────┘
+```
+
 1. The backend loads the LaBSE (Language-agnostic BERT Sentence Encoder) model
 2. All song texts are converted into vector embeddings at startup
 3. When you search, your query is also converted to a vector
@@ -96,7 +115,3 @@ Open http://localhost:5173 in your browser.
 | courage | Bravery, determination |
 | Krishna | Spirituality, divine love |
 | women | Empowerment, equality |
-
-## License
-
-MIT
