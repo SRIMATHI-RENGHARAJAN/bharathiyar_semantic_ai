@@ -2,11 +2,20 @@
 
 A web application to search and explore Mahakavi Bharathiyar's Tamil poems using semantic search. Instead of matching exact keywords, the app understands the meaning behind your query and finds relevant poems by theme or concept.
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)
+![React](https://img.shields.io/badge/React-18.3-61DAFB.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6.svg)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF.svg)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC.svg)
+
 ## About
 
 Mahakavi Bharathiyar (1882-1921) was one of the greatest Tamil poets and freedom fighters. This application makes his poetry accessible through modern AI-powered search. You can search in English or Tamil, and the app will find poems that match your query's meaning - not just the words.
 
 For example, searching "happiness" will also find poems about "joy" and "bliss", even if those exact words don't appear in the text.
+
+
 
 ## Features
 
